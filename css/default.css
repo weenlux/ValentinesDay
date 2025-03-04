@@ -104,3 +104,25 @@ body {
     top: 100px;
     left: 0
 }
+
+/* New Styles for Proposal Feature */
+#proposalContainer {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#response {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#gif {
+    width: 200px;
+}
