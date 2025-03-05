@@ -123,7 +123,7 @@ button {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
     .valentine-container {
         width: 90%; /* Keep it readable on small screens */
         top: 50%;
