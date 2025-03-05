@@ -121,3 +121,18 @@ button {
     background-color: #6666ff;
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .valentine-container {
+        width: 90%; /* Keep it readable on small screens */
+        margin: 20px auto 0 auto; /* Slightly smaller margin on phones */
+    }
+    .gif {
+        width: 120px; /* Slightly smaller GIF on phones */
+        height: 120px;
+    }
+    button {
+        padding: 8px 16px; /* Smaller buttons on phones */
+        font-size: 14px;
+    }
+}
