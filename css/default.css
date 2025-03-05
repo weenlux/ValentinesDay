@@ -128,7 +128,7 @@ button {
         width: 90%; /* Keep it readable on small screens */
         top: 50%;
         left: 50%;
-        position: relative;
+        position:relative;
     }
     .gif {
         width: 120px; /* Slightly smaller GIF on phones */
