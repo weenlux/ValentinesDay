@@ -330,7 +330,7 @@ button {
         padding: 0;
         box-sizing: border-box;
         position: absolute;
-        left: 60%;
+        left: 75%;
         transform: translateX(-50%);
         bottom: 10%;
         background: #f5edd1;
