@@ -17,7 +17,7 @@
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					Doan, I have fallen in love with you for
+					Đoan, I have fallen in love with you for
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
@@ -38,6 +38,29 @@
         </div>
     </div>
 </div>
+
+<div class="wrapper" id="love-proposal">
+	<div class="envelope">
+	  <div class="letter">
+		<div class="text">
+		  <strong>Dear Đoan.</strong>
+		  <p>
+			"I found the reason for my smile the day I found you. Will you let
+			me be the reason for your smile? Will you be my forever?"
+		  </p>
+		</div>
+	  </div>
+	</div>
+	<div class="heart"></div>
+
+	<div class="float-text">
+	  <span>I</span>
+	  <div class="big-heart"></div>
+	  <span>YOU</span>
+	</div>
+</div>
+
+<script src="js/app.js"></script>
 
 <script type="text/javascript">
 	var offsetX = $("#loveHeart").width() / 2;
@@ -77,13 +100,16 @@
 	}
 
 </script>
+
 <script type="text/javascript">
     function sayYes() {
         const container = document.getElementById('question');
+		const wrapper = document.getElementById('love-proposal');
         container.innerHTML = `
             <img src="./assets/emoji-smile.gif" alt="Happy GIF" class="gif">
             <h2>Yeahh!</h2>
         `;
+		wrapper.style.display = 'block'; // Show the wrapper below
     }
 
     function sayNo() {
@@ -93,7 +119,7 @@
             <div class="buttons">
                 <button class="yes-btn" onclick="resetQuestion()">Choose Again</button>
             </div>
-            <h2>I'm so sad 😢</h2>
+            <h2>Buồn 😢</h2>
         `;
     }
 
@@ -101,7 +127,7 @@
         const container = document.getElementById('question');
         container.innerHTML = `
             <img src="./assets/bunny-dance.gif" alt="Love GIF" class="gif">
-            <h2>Will you be my girlfriend?</h2>
+            <h2>Làm người yêu anh nhé</h2>
             <div class="buttons">
                 <button class="yes-btn" onclick="sayYes()">Yes</button>
                 <button class="no-btn" onclick="sayNo()">No</button>
