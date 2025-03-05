@@ -33,12 +33,12 @@ body {
 #words {
     font-family: "sans-serif";
     width: 500px;
-    font-size: 24px;
+    font-size: 30px;
     color: #666
 }
 
 #messages {
-    display: none
+    display: none;
 }
 
 #elapseClock .digit {
@@ -49,50 +49,15 @@ body {
 #loveu {
     padding: 5px;
     font-size: 22px;
-    margin-top: 80px;
-    margin-right: 120px;
+    margin-top: 70px;
+    margin-right: 90px;
     text-align: right;
     display: none
 }
 
-#loveu .signature {
-    margin-top: 10px;
-    font-size: 20px;
-}
 
 #clickSound {
     display: none
-}
-
-#code {
-    float: left;
-    width: 440px;
-    margin-top: 60px !important;
-    height: 400px;
-    color: #333;
-    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
-}
-
-#code .string {
-    color: #2a36ff
-}
-
-#code .keyword {
-    color: #7f0055;
-    font-weight: bold
-}
-
-#code .placeholder {
-    margin-left: 15px
-}
-
-#code .space {
-    margin-left: 7px
-}
-
-#code .comments {
-    color: #3f7f5f
 }
 
 
@@ -105,24 +70,54 @@ body {
     left: 0
 }
 
-/* New Styles for Proposal Feature */
-#proposalContainer {
-    clear: both;
+.valentine-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; /* Initially hidden */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gif {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.buttons {
+    margin: 20px 0;
 }
 
 button {
     padding: 10px 20px;
-    margin: 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
 }
 
-#response {
-    text-align: center;
-    margin-top: 20px;
+.yes-btn {
+    background-color: #ff4d4d;
+    color: white;
 }
 
-#gif {
-    width: 200px;
+.no-btn {
+    background-color: #6666ff;
+    color: white;
 }

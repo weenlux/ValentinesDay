@@ -4,12 +4,6 @@
 	<title>My Love</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital.ttf') format("truetype");
-		}
-	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
@@ -27,13 +21,24 @@
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					Anh muốn yêu em <br/>
-					và hiểu em nhiều hơn <br/>
+					le destin vous réunira à nouveau<br/>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- New Valentine Question Box -->
+<div class="valentine-container" id="valentine-box">
+    <div id="question">
+        <img src="./assets/bunny-dance.gif" alt="Love GIF" class="gif">
+        <h2>Will you be my girlfriend?</h2>
+        <div class="buttons">
+            <button class="yes-btn" onclick="sayYes()">Yes</button>
+            <button class="no-btn" onclick="sayNo()">No</button>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
 	var offsetX = $("#loveHeart").width() / 2;
 	var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -57,6 +62,9 @@
 	} else {
 		setTimeout(function () {
 			startHeartAnimation();
+			var valentineBox = document.getElementById('valentine-box');
+            valentineBox.style.display = 'block'; // Make it visible
+            valentineBox.style.animation = 'fadeIn 2s ease-in forwards'; // Apply fade-in
 		}, 5000);
 
 		timeElapse(together);
@@ -68,6 +76,42 @@
 		$("#code").typewriter();
 	}
 
+</script>
+<script type="text/javascript">
+    function sayYes() {
+        const container = document.getElementById('question');
+        container.innerHTML = `
+            <img src="./assets/emoji-smile.gif" alt="Happy GIF" class="gif">
+            <div class="buttons">
+                <button class="yes-btn" onclick="sayYes()">Yes</button>
+                <button class="no-btn" onclick="sayNo()">No</button>
+            </div>
+            <h2>Yeahh!</h2>
+        `;
+    }
+
+    function sayNo() {
+        const container = document.getElementById('question');
+        container.innerHTML = `
+            <img src="./assets/bubu-dudu-sseeyall.gif" alt="Sad GIF" class="gif">
+            <div class="buttons">
+                <button class="yes-btn" onclick="resetQuestion()">Choose Again</button>
+            </div>
+            <h2>I'm so sad 😢</h2>
+        `;
+    }
+
+	function resetQuestion() {
+        const container = document.getElementById('question');
+        container.innerHTML = `
+            <img src="./assets/bunny-dance.gif" alt="Love GIF" class="gif">
+            <h2>Will you be my girlfriend?</h2>
+            <div class="buttons">
+                <button class="yes-btn" onclick="sayYes()">Yes</button>
+                <button class="no-btn" onclick="sayNo()">No</button>
+            </div>
+        `;
+    }
 </script>
 </body>
 </html>
