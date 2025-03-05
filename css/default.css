@@ -7,8 +7,8 @@ body {
 }
 
 #mainDiv {
-    width: 100%;
-    height: 100%
+    width: 600px;
+    height: 100%;
 }
 
 #loveHeart {
@@ -72,16 +72,17 @@ body {
 
 .valentine-container {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 430px;
+    position:relative;
+    margin: 30px auto 0 auto;
     display: none; /* Initially hidden */
 }
+
 
 /* Define the fade-in animation */
 @keyframes fadeIn {
@@ -125,7 +126,9 @@ button {
 @media screen and (max-width: 600px) {
     .valentine-container {
         width: 90%; /* Keep it readable on small screens */
-        margin: 20px auto 0 auto; /* Slightly smaller margin on phones */
+        top: 50%;
+        left: 32%;
+        position: relative;
     }
     .gif {
         width: 120px; /* Slightly smaller GIF on phones */
