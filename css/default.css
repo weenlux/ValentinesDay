@@ -322,7 +322,7 @@ button {
     font-weight: 600;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .wrapper {
         font-family: "Poppins", sans-serif;
         margin: 0;
