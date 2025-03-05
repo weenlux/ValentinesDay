@@ -325,19 +325,13 @@ button {
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     .wrapper {
-        font-family: "Poppins", sans-serif;
-        margin: 0;
-        top: 160%;
-        padding: 0;
-        box-sizing: border-box;
         position: absolute;
-        left: 80%;
-        transform: translateX(-50%);
-        bottom: 10%;
-        background: #f5edd1;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-        display:none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center on phone */
+        margin: 0; /* Override default margin */
     }
 }
+
