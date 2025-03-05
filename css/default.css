@@ -127,7 +127,7 @@ button {
     .valentine-container {
         width: 90%; /* Keep it readable on small screens */
         top: 50%;
-        left: 40%;
+        left: 30%;
         position:relative;
     }
     .gif {
@@ -330,7 +330,7 @@ button {
         padding: 0;
         box-sizing: border-box;
         position: absolute;
-        left: 90%;
+        left: 60%;
         transform: translateX(-50%);
         bottom: 10%;
         background: #f5edd1;
