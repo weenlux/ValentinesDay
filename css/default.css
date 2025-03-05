@@ -327,9 +327,15 @@ button {
         width: 90%;
         position: absolute;
         top: 50%;
-        left: 100%;
+        left: 50%;
         transform: translate(-50%, -50%); /* Center on phone */
         margin: 0; /* Override default margin */
     }
+    .wrapper .envelope {
+        position: relative;
+        width: 425px;
+        height: 230px;
+    }
+    
 }
 
